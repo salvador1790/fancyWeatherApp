@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
                 let city = response.address.city;
                 let state = response.address.state;
                 console.log(city, state);
-                let weatherURL = `http://api.openweathermap.org/data/2.5/weather?q=${city},${state}&APPID=${weatherKey}`;
+                let weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state}&APPID=${weatherKey}`;
                 $.ajax({
                     url: weatherURL,
                     method: "GET"
